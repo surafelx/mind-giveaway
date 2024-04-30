@@ -1,5 +1,5 @@
 // Replace this with your actual hidden code
-const hiddenCode = "12345678901234";
+const hiddenCode = "****************";
 
 document.addEventListener("DOMContentLoaded", function () {
   const blurredField = document.querySelector(".blurredField");
@@ -20,12 +20,7 @@ document
   .getElementById("codeForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    const userInput = document.getElementById("codeInput").value.trim();
-    if (userInput === hiddenCode) {
-      document.getElementById("successMessage").style.display = "block";
-    } else {
-      alert("Incorrect code. Keep trying!");
-    }
+    
   });
 
 setTimeout(() => {
